@@ -1,0 +1,60 @@
+{
+  "math": [
+    {
+      "question": "2 + 9 equal to :",
+      "answer1": 2,
+      "answer2": 11,
+      "answer3": 10,
+      "answer4": 29,
+      "curAnswer": 11
+    },
+    {
+      "question": "(5 * 2) + (1 * 0)  equal to :",
+      "answer1": 10,
+      "answer2": 11,
+      "answer3": 0,
+      "answer4": 1,
+      "curAnswer": 10
+    },
+    {
+      "question": "(5^2 - 5) / 10 equal to :",
+      "answer1": 10,
+      "answer2": 20,
+      "answer3": 0.5,
+      "answer4": 2,
+      "curAnswer": 2
+    },
+    {
+      "question": "3 * 3 - 3 / 3 equal to :",
+      "answer1": 3,
+      "answer2": 2,
+      "answer3": 8,
+      "answer4": 6,
+      "curAnswer": 8
+    },
+    {
+      "question": "12 - 9 equal to :",
+      "answer1": 2,
+      "answer2": 21,
+      "answer3": 3,
+      "answer4": 4,
+      "curAnswer": 3
+    },
+    {
+      "question": "8 * 3 equal to :",
+      "answer1": 24,
+      "answer2": 11,
+      "answer3": 16,
+      "answer4": 27,
+      "curAnswer": 24
+    },
+    {
+      "question": "3 / 2 equal to :",
+      "answer1": 1,
+      "answer2": 1.5,
+      "answer3": 0,
+      "answer4": 6,
+      "curAnswer": 1.5
+    }
+  ]
+}

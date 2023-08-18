@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --mainColor: #39a725ba;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  user-select: none;
+}
+body.finish {
+  pointer-events: none;
+}
+.start-exam {
+  background-color: var(--mainColor);
+  padding: 30px;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 100px;
+  color: white;
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  .start-exam {
+    font-size: 30px;
+  }
+}
+.exam {
+  padding: 20px 0;
+  text-align: center;
+  background-color: #39a725ba;
+}
+.exam p {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+.container {
+  margin: auto;
+  padding: 0 10px;
+  position: relative;
+}
+.exam-box {
+  display: none;
+}
+.exam-box .question {
+  background-color: #e6ffdf;
+  text-align: center;
+  padding: 40px 0;
+  font-size: 35px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.exam-box .answers {
+  margin-top: 25px;
+  text-align: center;
+}
+.exam-box .answers ul {
+  list-style: none;
+}
+.exam-box .answers ul li {
+  width: 49%;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+.exam-box .answers ul li > span {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  color: white;
+  background-color: #39a725ba;
+  font-size: 22px;
+  cursor: pointer;
+}
+.exam-box .answers ul li.selected {
+  outline: 3px solid #ff9800;
+}
+.exam-box .answers ul li:hover {
+  background-color: rgba(26, 26, 27, 0.267);
+}
+@media (max-width: 767px) {
+  .exam-box .answers ul li {
+    width: 100%;
+  }
+  .exam-box .answers ul li:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+.exam-box .time-left {
+  background-color: red;
+  width: fit-content;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  margin: 25px 0;
+}
+.exam-box .controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #e6ffdf;
+  padding: 20px;
+}
+@media (max-width: 767px) {
+  .exam-box .controls {
+    flex-direction: column;
+  }
+  .exam-box .controls .indecators {
+    order: 1;
+    margin-top: 15px;
+  }
+}
+.exam-box .controls .next {
+  border: none;
+  background-color: #00953b;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100px;
+  border-radius: 6px;
+}
+.exam-box .controls .next.end {
+  pointer-events: none;
+  opacity: 0.5;
+}
+.exam-box .indecators {
+  background-color: var(--mainColor);
+  padding: 20px 30px;
+  border-radius: 30px;
+}
+.exam-box .indecators span {
+  background-color: white;
+  font-size: 15px;
+  font-weight: bold;
+  margin-right: 10px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}
+.exam-box .indecators span.done {
+  background-color: #ff9800;
+}
+.result {
+  background-color: #fe0909;
+  font-size: 40px;
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+  border-radius: 6px;
+  color: white;
+  display: none;
+  margin-top: 50px;
+}
+@media (max-width: 767px) {
+  .result {
+    font-size: 30px;
+  }
+}
+.show {
+  display: block;
+}
+
+/* small screens */
+
+@media (min-width: 768px) {
+  .container {
+    width: 760px;
+  }
+}
+/* mid screens and above */
+
+@media (min-width: 992px) {
+  .container {
+    width: 1000px;
+  }
+}
